@@ -11,7 +11,7 @@ function Header({ user, setFormIsVisible, search, setSearch }) {
     <header className={styles.header}>
       <div className={styles.headerWrapper}>
         <div className={styles.navigationBlock}>
-          <a className={styles.logo} href="/">
+          <a className={styles.logo} href="/mvp/">
             <div className={styles.logo}></div>
           </a>
 

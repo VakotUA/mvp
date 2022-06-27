@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from '../Login.module.css'
 
 function RegisterForm({ details, setDetails, setForm, error }) {

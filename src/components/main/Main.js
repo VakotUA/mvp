@@ -22,17 +22,17 @@ function Main({ search, setSearch }) {
           <button>Найти специалиста</button>
         </div>
         <p>
-          Например: <a href="/">ремонт крана</a>
+          Например: <a href="/mvp/">ремонт крана</a>
         </p>
       </div>
 
       <div className={styles.faq}>
-        <a href="/">
+        <a href="/mvp/">
           <BiCategory className={styles.faqIcon} />
           <p>Все категории услуг</p>
         </a>
 
-        <a href="/">
+        <a href="/mvp/">
           <BiQuestionMark className={styles.faqIcon} />
           <p>Как это работает</p>
         </a>
