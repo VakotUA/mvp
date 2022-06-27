@@ -4,9 +4,8 @@ import { IoIosSearch } from 'react-icons/io'
 import { RiUserAddLine } from 'react-icons/ri'
 import { FiMail, FiBell, FiStar } from 'react-icons/fi'
 
-function Header({ user, setFormIsVisible }) {
+function Header({ user, setFormIsVisible, search, setSearch }) {
   const [selectIsActive, setSelectIsActive] = useState(false)
-  const [search, setSearch] = useState('')
 
   return (
     <header className={styles.header}>

@@ -1,50 +1,32 @@
 import React, { useState } from 'react'
 import Header from './components/header/Header'
-import LoginForm from './components/login/loginForm'
+import Login from './components/login/Login'
+import Main from './components/main/Main'
+import Categories from './components/categories/Categories'
 import styles from './App.module.css'
-import TestUserLogo from './assets/userLogo.jpg'
-
-const adminUser = {
-  email: 'vakotua.g@gmail.com',
-  password: '1488',
-  img: TestUserLogo,
-  // TODO: Стату пользователя (посетитель, работник и тд.)
-}
 
 function App() {
+  const [search, setSearch] = useState('')
   const [user, setUser] = useState({ name: '', email: '', img: null })
-  const [loginError, setLoginError] = useState('')
   const [formIsVisible, setFormIsVisible] = useState(false)
-
-  const Login = (details) => {
-    if (
-      details.email.toLowerCase() !== adminUser.email.toLowerCase() ||
-      details.password !== adminUser.password
-    ) {
-      setLoginError('Details do not match!')
-      return 1
-    }
-
-    setUser({ name: details.name, email: adminUser.email, img: adminUser.img })
-    setLoginError('')
-    return 0
-  }
-
-  // const Logout = () => {
-  //   setUser({ name: '', email: '' })
-  //   setLoginError('')
-  // }
 
   return (
     <div className={styles.app}>
       {formIsVisible && (
-        <LoginForm
-          Login={Login}
-          error={loginError}
+        <Login
           setFormIsVisible={setFormIsVisible}
+          user={user}
+          setUser={setUser}
         />
       )}
-      <Header user={user} setFormIsVisible={setFormIsVisible} />
+      <Header
+        user={user}
+        setFormIsVisible={setFormIsVisible}
+        search={search}
+        setSearch={setSearch}
+      />
+      <Main search={search} setSearch={setSearch} />
+      <Categories />
     </div>
   )
 }
