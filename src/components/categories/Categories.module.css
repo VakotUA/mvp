@@ -45,3 +45,16 @@
 .categories > ul > li:hover:after {
   width: 80%;
 }
+
+@media screen and (max-width: 600px) {
+  .categories {
+    padding: 40px;
+  }
+  .categories > ul {
+    gap: 20px 3%;
+    flex-wrap: wrap;
+  }
+  .categories > ul > li {
+    width: 30%;
+  }
+}
