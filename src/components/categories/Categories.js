@@ -31,7 +31,7 @@ function Categories() {
           </li>
         ))}
         <li className={styles.category}>
-          <a href="/mvp/'">
+          <a href="/mvp/">
             <span className={styles.categoryIcon}>
               <BiCategory />
             </span>
