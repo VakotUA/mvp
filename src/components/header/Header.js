@@ -1,19 +1,28 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import styles from './Header.module.css'
-import { IoIosSearch } from 'react-icons/io'
-import { RiUserAddLine } from 'react-icons/ri'
-import { FiMail, FiBell, FiStar } from 'react-icons/fi'
 
-function Header({ user, setFormIsVisible, search, setSearch }) {
+import * as Icons from 'react-bootstrap-icons'
+
+function Header({
+  user,
+  setFormIsVisible,
+  search,
+  setSearch,
+  setSelectedCategory,
+}) {
   const [selectIsActive, setSelectIsActive] = useState(false)
 
   return (
     <header className={styles.header}>
       <div className={styles.headerWrapper}>
         <div className={styles.navigationBlock}>
-          <a className={styles.logo} href="/mvp/">
-            <div className={styles.logo}></div>
-          </a>
+          <Link className={styles.logo} to="/mvp/">
+            <div
+              className={styles.logo}
+              onClick={() => setSelectedCategory(null)}
+            ></div>
+          </Link>
 
           <div
             className={`${styles.select} ${
@@ -41,16 +50,18 @@ function Header({ user, setFormIsVisible, search, setSearch }) {
               type="text"
               placeholder="Что нужно сделать?"
             />
-            <IoIosSearch className={styles.searchIcon} />
+            <button>
+              <Icons.Search />
+            </button>
           </div>
         </div>
 
         <div className={styles.userBlock}>
           {user.name && (
             <div className={styles.notification}>
-              <FiMail onClick={() => 'TODO: Show mails'} />
-              <FiBell onClick={() => 'TODO: Show notifiacions'} />
-              <FiStar onClick={() => 'TODO: Show favorite'} />
+              <Icons.Envelope />
+              <Icons.Bell />
+              <Icons.Star />
             </div>
           )}
 
@@ -63,7 +74,7 @@ function Header({ user, setFormIsVisible, search, setSearch }) {
               <img src={user.img} alt="avatar" />
             </div>
           ) : (
-            <RiUserAddLine
+            <Icons.PersonPlus
               className={styles.userIcon}
               onClick={() => setFormIsVisible(true)}
             />

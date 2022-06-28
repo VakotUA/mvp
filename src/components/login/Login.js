@@ -9,7 +9,7 @@ const adminUser = {
   email: 'vakotua.g@gmail.com',
   password: '1488',
   img: TestUserLogo,
-  // TODO: Стату пользователя (посетитель, работник и тд.)
+  // TODO: Статус пользователя (посетитель, работник и тд.)
 }
 
 function Login({ setFormIsVisible, user, setUser }) {

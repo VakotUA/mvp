@@ -1,51 +1,58 @@
 .categories {
   width: 100%;
-  padding: 40px 80px;
+  padding: 40px 0;
+
   border-bottom: 1px solid lightgrey;
 }
 
 .categories > ul {
+  width: 750px;
+  margin: 0 auto;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+
   list-style-type: none;
 }
 
-.category {
-  width: 20%;
+.categories > ul > li {
+  width: 30%;
 }
 
-.category > a {
+.category {
   width: 100%;
   height: 100%;
 
   color: #959595;
-  font-size: 10px;
   text-decoration: none;
 
   display: flex;
   align-items: center;
   flex-direction: column;
 
-  font-size: 10px;
+  font-size: 14px;
 
   position: relative;
-  cursor: pointer;
+
+  transition: color 0.3s ease-in-out;
 }
-.category > a:after {
+.category:after {
   content: '';
   width: 10px;
   height: 1px;
+
   position: absolute;
   bottom: -5px;
+
   background-color: gray;
   transition: width 0.3s ease-in-out;
 }
 
 .categoryIcon {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   padding: 5px;
 }
 .categoryIcon > * {
@@ -53,19 +60,27 @@
   height: 100%;
 }
 
-.category > a:hover:after {
+.category:hover,
+.category.active {
+  color: #1e905d;
+}
+.category.active::after,
+.category:hover:after {
+  background-color: #1e905d;
+}
+.category.active:after {
+  width: 40%;
+}
+.category:hover:after {
   width: 80%;
 }
 
-@media screen and (max-width: 600px) {
-  .categories {
-    padding: 40px;
-  }
+@media screen and (max-width: 800px) {
   .categories > ul {
+    width: 100%;
+    max-width: 600px;
+
     gap: 20px 3%;
     flex-wrap: wrap;
-  }
-  .category {
-    width: 30%;
   }
 }

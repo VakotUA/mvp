@@ -1,16 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styles from './Main.module.css'
-import { BiCategory, BiQuestionMark } from 'react-icons/bi'
 
-function Main({ search, setSearch }) {
+function Main({ content, search, setSearch }) {
   return (
-    <section className={styles.main}>
+    <section
+      className={styles.main}
+      style={{ backgroundImage: `url(${content.bgImage})` }}
+    >
       <h2>Разом до перемоги!</h2>
-      <h2>Онлайн-сервис заказа услуг</h2>
-      <p>
-        Более 100 000 проверенных специалистов для выполнения ваших бытовых или
-        бизнес задач
-      </p>
+      <h2>{content.header}</h2>
+      <p>{content.text}</p>
       <div className={styles.searchBlock}>
         <div className={styles.search}>
           <input
@@ -22,21 +22,21 @@ function Main({ search, setSearch }) {
           <button>Найти специалиста</button>
         </div>
         <p>
-          Например: <a href="/mvp/">ремонт крана</a>
+          Например:{' '}
+          <Link to={content.example.link}>{content.example.text}</Link>
         </p>
       </div>
 
-      <div className={styles.faq}>
-        <a href="/mvp/">
-          <BiCategory className={styles.faqIcon} />
-          <p>Все категории услуг</p>
-        </a>
-
-        <a href="/mvp/">
-          <BiQuestionMark className={styles.faqIcon} />
-          <p>Как это работает</p>
-        </a>
-      </div>
+      <ul className={styles.faq}>
+        {content.faq.map((item, index) => (
+          <li key={index}>
+            <Link to={item.link}>
+              {item.icon}
+              <p>{item.text}</p>
+            </Link>
+          </li>
+        ))}
+      </ul>
     </section>
   )
 }

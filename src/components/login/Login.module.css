@@ -50,6 +50,8 @@
   top: 25px;
   border-radius: 5px;
   height: 150px;
+
+  transition: height 0.3s ease-in-out;
 }
 .formContent > img:hover {
   height: calc(100% - 75px - 2.5rem);
@@ -60,7 +62,6 @@
 .formTitle,
 .formTitle > div {
   display: flex;
-  /* align-items: flex-end; */
   gap: 1rem;
   justify-content: space-between;
 }
@@ -103,6 +104,13 @@
   bottom: 0;
 }
 
+.formGroup > input,
+.formGroup > label {
+  transition-property: color, border-color, transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
 .formGroup > input::placeholder {
   color: transparent;
 }
@@ -138,26 +146,31 @@
   width: 50%;
   max-width: 150px;
   height: 2.5rem;
+  padding: 0 20px;
   margin-top: 1rem;
-  font-size: 20px;
+
+  font-size: 15px;
   font-weight: bold;
+
   color: #ff5722;
   border: 1px solid #ff5722;
   border-radius: 4px;
+
   cursor: pointer;
-  padding: 0 20px;
-  font-size: 15px;
+
+  transition-property: color, background-color, box-shadow, filter;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
 }
 
-.btn.active {
-  color: white;
-  background: #ff5722;
-}
-
+.btn.active,
 .btn:hover {
   color: white;
   background: #ff5722;
-  box-shadow: 0px 2px 4px #ff562281;
+}
+
+.btn.active:hover {
+  filter: grayscale(50%);
 }
 
 /* ===ERROR=== */
