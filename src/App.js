@@ -8,6 +8,7 @@ import Categories from './components/categories/Categories'
 import Help from './components/help/Help'
 import FAQ from './components/faq/FAQ'
 import Reviews from './components/reviews/Reviews'
+import MobileApp from './components/mobile/MobileApp'
 
 import styles from './App.module.css'
 
@@ -56,8 +57,8 @@ function App() {
       <Help />
       <FAQ />
       <Reviews reviews={data.reviews} />
+      <MobileApp />
 
-      {/* <MobileApp /> */}
       {/* <Geography /> */}
       {/* <Find /> */}
       {/* <Footer /> */}

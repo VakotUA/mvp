@@ -2,3 +2,9 @@
   width: 100%;
   height: 340px;
 }
+
+@media screen and (max-width: 500px) {
+  .reviews {
+    min-height: calc(100vh - 60px);
+  }
+}
