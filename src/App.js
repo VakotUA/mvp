@@ -5,7 +5,7 @@ import Header from './components/header/Header'
 import Login from './components/login/Login'
 import Main from './components/main/Main'
 import Categories from './components/categories/Categories'
-
+import Help from './components/help/Help'
 import FAQ from './components/faq/FAQ'
 
 import styles from './App.module.css'
@@ -52,7 +52,7 @@ function App() {
 
       <Categories categories={data.categories} />
 
-      {/* <Help /> */}
+      <Help />
       <FAQ />
       {/* <Reviews /> */}
       {/* <MobileApp /> */}

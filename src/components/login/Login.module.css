@@ -157,7 +157,7 @@
 
   cursor: pointer;
 
-  transition-property: color, background-color, box-shadow, filter;
+  transition-property: color, background-color, filter;
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
 }
