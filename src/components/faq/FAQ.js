@@ -1,5 +1,5 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import styles from './FAQ.module.css'
 import { ChevronRight } from 'react-bootstrap-icons'
 import Icon1 from '../../assets/faq-icon-1.png'
@@ -17,31 +17,37 @@ function FAQ() {
       </h2>
 
       <div className={styles.steps}>
-        <div>
-          {/* TODO: <Link to={}></Link>*/}
-          <img src={Icon1} alt="" />
+        {/* TODO: <Link to={}></Link>*/}
+        <Link to="/mvp/">
+          <img src={Icon1} alt="step-image" />
           <h3>Создайте заказ</h3>
           <p>Опишите, что и когда нужно сделать</p>
-        </div>
+        </Link>
 
         <ChevronRight className={styles.separator} />
 
-        <div>
-          {/* TODO: <Link to={}></Link>*/}
-          <img src={Icon2} alt="" />
+        {/* TODO: <Link to={}></Link>*/}
+        <Link to="/mvp/">
+          <img src={Icon2} alt="step-image" />
           <h3>Выберите специалисти</h3>
           <p>Выберите компетентного специалиста для выполнения работы</p>
-        </div>
+        </Link>
 
         <ChevronRight className={styles.separator} />
 
-        <div>
-          {/* TODO: <Link to={}></Link>*/}
-          <img src={Icon3} alt="" />
+        {/* TODO: <Link to={}></Link>*/}
+        <Link to="/mvp/">
+          <img src={Icon3} alt="step-image" />
           <h3>Закройте заказ</h3>
           <p>Оставьте отзыв и оценку за проделанную работу</p>
-        </div>
+        </Link>
       </div>
+
+      {/* TODO: <Link to={}>Создайте заказ</Link>*/}
+      <p>
+        <Link to="/mvp/">Создайте заказ</Link> прямо сейчас и найдите
+        специалиста за считанные минуты!
+      </p>
     </section>
   )
 }

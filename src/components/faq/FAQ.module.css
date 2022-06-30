@@ -9,41 +9,53 @@
   font-weight: 300;
 }
 
-.faq > h2 > a {
-  text-decoration: none;
-  color: #000;
+.faq > p {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 18px;
 }
-.faq > h2 > a:hover {
+.faq > h2 > a,
+.faq > p > a {
+  color: var(--color-hover-effect-primary);
+  font-weight: 500;
+  text-decoration: none;
+}
+.faq > h2 > a:hover,
+.faq > p > a:hover {
   text-decoration: underline;
 }
 
 .steps {
   width: 100%;
+  min-height: 250px;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
-.steps > div {
+.steps > a {
   width: 25%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: #000;
   cursor: pointer;
 }
 
-.steps > div > img {
+.steps > a > img {
   width: 120px;
   height: 120px;
 }
 
-.steps > div > h3 {
+.steps > a > h3 {
   font-weight: 500;
   font-size: 18px;
   text-align: center;
 }
 
-.steps > div > p {
+.steps > a > p {
   font-weight: 300;
   font-size: 14px;
   text-align: center;
@@ -52,14 +64,19 @@
 .separator {
   width: 50px;
   height: 50px;
+  margin-top: 35px;
+
   font-size: 64px;
-  color: var(--color-lightgray);
   text-align: center;
+  color: var(--color-lightgray);
+
+  opacity: 0.25;
 }
 
 @media screen and (max-width: 800px) {
   .steps {
     flex-direction: column;
+    align-items: center;
   }
   .steps > div {
     width: 100%;
