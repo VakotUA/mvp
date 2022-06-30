@@ -14,7 +14,9 @@ function Help() {
         </p>
 
         {/* TODO: <Link to={}></Link> */}
-        <div className={`${styles.btn} ${styles.active}`}>Оформить заявку</div>
+        <Link to="/mvp/" className={`${styles.btn} ${styles.active}`}>
+          Оформить заявку
+        </Link>
       </div>
     </section>
   )

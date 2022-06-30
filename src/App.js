@@ -7,6 +7,7 @@ import Main from './components/main/Main'
 import Categories from './components/categories/Categories'
 import Help from './components/help/Help'
 import FAQ from './components/faq/FAQ'
+import Reviews from './components/reviews/Reviews'
 
 import styles from './App.module.css'
 
@@ -54,7 +55,8 @@ function App() {
 
       <Help />
       <FAQ />
-      {/* <Reviews /> */}
+      <Reviews reviews={data.reviews} />
+
       {/* <MobileApp /> */}
       {/* <Geography /> */}
       {/* <Find /> */}
