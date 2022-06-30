@@ -6,6 +6,8 @@ import Login from './components/login/Login'
 import Main from './components/main/Main'
 import Categories from './components/categories/Categories'
 
+import FAQ from './components/faq/FAQ'
+
 import styles from './App.module.css'
 
 import data from './data'
@@ -46,24 +48,12 @@ function App() {
             }
           />
         ))}
-        <Route
-          path="*"
-          element={
-            // <main style={{ padding: '1rem' }}>
-            //   <h1>There's nothing here!</h1>
-            // </main>
-            <></>
-          }
-        />
       </Routes>
 
-      <Categories
-        categories={data.categories}
-        // categoriesList={data.categories}
-      />
+      <Categories categories={data.categories} />
 
       {/* <Help /> */}
-      {/* <FAQ /> */}
+      <FAQ />
       {/* <Reviews /> */}
       {/* <MobileApp /> */}
       {/* <Geography /> */}

@@ -1,0 +1,71 @@
+.faq {
+  padding: 50px;
+}
+
+.faq > h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.faq > h2 > a {
+  text-decoration: none;
+  color: #000;
+}
+.faq > h2 > a:hover {
+  text-decoration: underline;
+}
+
+.steps {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.steps > div {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.steps > div > img {
+  width: 120px;
+  height: 120px;
+}
+
+.steps > div > h3 {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+}
+
+.steps > div > p {
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+}
+
+.separator {
+  width: 50px;
+  height: 50px;
+  font-size: 64px;
+  color: var(--color-lightgray);
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .steps {
+    flex-direction: column;
+  }
+  .steps > div {
+    width: 100%;
+  }
+  .separator {
+    margin: 20px 0;
+    transform: rotate(90deg);
+  }
+}
