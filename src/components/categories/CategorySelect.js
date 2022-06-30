@@ -8,7 +8,7 @@ function CategorySelect({ categories }) {
   const [selectedCategory, setSelectedCategory] = useState(null)
 
   return (
-    <section className={styles.categories}>
+    <section className={styles.categorySelect}>
       <ul>
         {categories.slice(0, 5).map((item) => (
           <li key={item.id}>

@@ -7,7 +7,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  color: white;
+  color: var(--color-bg-primary);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,22 +50,22 @@
   height: 100%;
   padding: 0 1rem;
   border-radius: 4px 0 0 4px;
-  background-color: white;
-  border: 1px solid white;
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-bg-primary);
   transition: border-color 0.3s ease-in-out;
 }
 .search > input:hover,
 .search > input:focus {
-  border-color: #ff5722;
+  border-color: var(--color-button-primary);
 }
 
 .search > button {
   width: 180px;
   height: 100%;
-  color: white;
+  color: var(--color-bg-primary);
 
   border-radius: 0 4px 4px 0;
-  background-color: #ff5722;
+  background-color: var(--color-button-primary);
 
   cursor: pointer;
 
@@ -85,7 +85,7 @@
   margin-top: 0.5em;
 }
 .searchBlock > p > a {
-  color: white;
+  color: var(--color-bg-primary);
   text-decoration: underline dashed;
 }
 
@@ -108,14 +108,14 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  color: white;
+  color: var(--color-bg-primary);
   text-decoration: none;
   font-weight: 100;
   transition: color 0.3s ease-in-out;
 }
 
 .faq > li > a:hover {
-  color: lightgray;
+  color: var(--color-lightgray);
 }
 
 @media screen and (max-width: 800px) {

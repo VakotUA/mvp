@@ -18,11 +18,11 @@
   position: fixed;
   left: 50%;
   top: 50%;
-  background: white;
+  background: var(--color-bg-primary);
   transform: translate(-50%, -50%);
   border-radius: 5px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-  color: #ff5722;
+  color: var(--color-button-primary);
   overflow: hidden;
   z-index: 11;
 }
@@ -81,11 +81,11 @@
 
 .formGroup > * {
   cursor: pointer;
-  color: gray;
+  color: var(--color-gray);
 }
 
 .formGroup > label {
-  color: lightgray;
+  color: var(--color-lightgray);
   font-size: 16px;
   position: absolute;
   left: 10px;
@@ -97,7 +97,7 @@
 .formGroup > input {
   width: 100%;
   height: 2rem;
-  border-bottom: 2px solid lightgray;
+  border-bottom: 2px solid var(--color-lightgray);
   padding: 0 10px;
   font-size: 16px;
   position: absolute;
@@ -121,12 +121,11 @@
 }
 
 .formGroup > input:hover,
-.formGroup > input:hover + label {
-  border-color: #ff5722;
-  color: #ff5722;
-}
-.formGroup > input:focus {
-  border-color: #ff5722;
+.formGroup > input:hover + label,
+.formGroup > input:focus,
+.formGroup > input:focus + label {
+  border-color: var(--color-button-primary);
+  color: var(--color-button-primary);
 }
 
 .formGroup > input:focus + label,
@@ -152,8 +151,8 @@
   font-size: 15px;
   font-weight: bold;
 
-  color: #ff5722;
-  border: 1px solid #ff5722;
+  color: var(--color-button-primary);
+  border: 1px solid var(--color-button-primary);
   border-radius: 4px;
 
   cursor: pointer;
@@ -165,8 +164,8 @@
 
 .btn.active,
 .btn:hover {
-  color: white;
-  background: #ff5722;
+  color: var(--color-bg-primary);
+  background: var(--color-button-primary);
 }
 
 .btn.active:hover {
@@ -177,6 +176,8 @@
 
 .error {
   color: red;
+  display: flex;
+  align-items: center;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.05);
   padding: 5px 10px;

@@ -1,20 +1,40 @@
 import React from 'react'
-// import { Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import CategorySelect from './CategorySelect'
-// import CategoriesList from './CategoriesList'
+import CategoriesList from './CategoriesList'
 
-function Categories({ categories, categoriesList }) {
+function getAllCategories(categories) {
+  const result = []
+  categories.map(
+    (item) =>
+      item.list && item.list.map((item) => item.list && result.push(item))
+  )
+  return result
+}
+
+function Categories({ categories }) {
+  const allCategoriesList = getAllCategories(categories)
+
   return (
-    <section>
+    <>
       <CategorySelect categories={categories} />
-      {/* <Routes>
-        <Route to={categories[0].link} element={<CategoriesList />} />
-      </Routes> */}
+      <Routes>
+        {categories.map((item) => (
+          <Route
+            key={item.id}
+            path={item.link}
+            element={<CategoriesList list={item.list} />}
+          />
+        ))}
+        <Route path="*" element={<CategoriesList list={allCategoriesList} />} />
+        <Route
+          path="/mvp/all-categories"
+          element={<CategoriesList list={allCategoriesList} />}
+        />
+      </Routes>
 
-      {/* TODO: Сделать вывод сохранённых категорий и прочего с 
-      ними связанного, по типу ссылки на страницу с заказами */}
-      {/* <CategoriesList categories={categoriesList} /> */}
-    </section>
+      {/* TODO: Строка поиска */}
+    </>
   )
 }
 

@@ -1,26 +1,19 @@
-import { Link } from 'react-router-dom'
+import React from 'react'
+import List from './List'
+import styles from './Categories.module.css'
 
-function getTotalCount(list) {
-  let count = 0
-
-  list.map((item) => (count += item.count))
-
-  return count
-}
-
-function CategoriesList({ categories }) {
+function CategoriesList({ list }) {
   return (
-    <section>
-      <ul>
-        {categories.map((item) => (
-          <li>
-            <Link to={'/mvp/'}>
-              <span>{item.title}</span>
-              <small>{getTotalCount(item.list)}</small>
-            </Link>
-          </li>
-        ))}
-      </ul>
+    <section className={styles.categoriesList}>
+      {list && (
+        <ul className={styles.topList}>
+          {list.map((item, index) => (
+            <li key={index}>
+              <List category={item} />
+            </li>
+          ))}
+        </ul>
+      )}
     </section>
   )
 }

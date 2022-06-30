@@ -4,13 +4,7 @@ import styles from './Header.module.css'
 
 import * as Icons from 'react-bootstrap-icons'
 
-function Header({
-  user,
-  setFormIsVisible,
-  search,
-  setSearch,
-  setSelectedCategory,
-}) {
+function Header({ user, setFormIsVisible, search, setSearch }) {
   const [selectIsActive, setSelectIsActive] = useState(false)
 
   return (
@@ -18,10 +12,7 @@ function Header({
       <div className={styles.headerWrapper}>
         <div className={styles.navigationBlock}>
           <Link className={styles.logo} to="/mvp/">
-            <div
-              className={styles.logo}
-              onClick={() => setSelectedCategory(null)}
-            ></div>
+            <div className={styles.logo}></div>
           </Link>
 
           <div

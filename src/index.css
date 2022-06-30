@@ -1,3 +1,15 @@
+:root {
+  --color-bg-primary: #fff;
+  --color-bg-secondary: #faf9f7;
+
+  --color-button-primary: #ff5722;
+
+  --color-hover-effect-primary: #1e905d;
+
+  --color-lightgray: #959595;
+  --color-gray: #333333;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -12,9 +24,9 @@
 }
 
 body {
-  background: #faf9f7;
+  background: var(--color-bg-secondary);
 }
 
 section {
-  background-color: white;
+  background-color: var(--color-bg-primary);
 }

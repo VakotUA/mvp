@@ -49,17 +49,19 @@ function App() {
         <Route
           path="*"
           element={
-            <main style={{ padding: '1rem' }}>
-              <h1>There's nothing here!</h1>
-            </main>
+            // <main style={{ padding: '1rem' }}>
+            //   <h1>There's nothing here!</h1>
+            // </main>
+            <></>
           }
         />
       </Routes>
 
       <Categories
-        categories={data.defaultCategories}
-        categoriesList={data.categories}
+        categories={data.categories}
+        // categoriesList={data.categories}
       />
+
       {/* <Help /> */}
       {/* <FAQ /> */}
       {/* <Reviews /> */}
