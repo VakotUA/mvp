@@ -1,21 +1,25 @@
 {
   "files": {
-    "main.css": "/mvp/static/css/main.01b81de8.css",
-    "main.js": "/mvp/static/js/main.9c61145e.js",
+    "main.css": "/mvp/static/css/main.b76ae442.css",
+    "main.js": "/mvp/static/js/main.0310ab17.js",
     "static/media/main-bg.jpg": "/mvp/static/media/main-bg.d227dfacbe0f45ef20c3.jpg",
     "static/media/help.jpg": "/mvp/static/media/help.34b1497a604bd8fddde2.jpg",
     "static/media/house-bg.jpg": "/mvp/static/media/house-bg.815a5ce753fa58f82c26.jpg",
     "static/media/freelance-bg.jpg": "/mvp/static/media/freelance-bg.3e084ec40dfd44ea4de0.jpg",
+    "static/media/slide-1.jpg": "/mvp/static/media/slide-1.e5f160d7d4d3b40622eb.jpg",
     "static/media/logistic-bg.jpg": "/mvp/static/media/logistic-bg.cc441e577e94c35b07dc.jpg",
     "static/media/teacher-bg.jpg": "/mvp/static/media/teacher-bg.68078f01afd281a33342.jpg",
     "static/media/business-bg.jpg": "/mvp/static/media/business-bg.919bdb1e4768670cb251.jpg",
+    "static/media/slide-2.jpg": "/mvp/static/media/slide-2.d87a96aa2624c969c089.jpg",
+    "static/media/slide-4.jpg": "/mvp/static/media/slide-4.99be4aae9c8f965022b8.jpg",
     "static/media/userLogo.jpg": "/mvp/static/media/userLogo.7b9067bb3ded13fef7e0.jpg",
+    "static/media/slide-3.jpg": "/mvp/static/media/slide-3.b2d824fd8dbc7b1770e0.jpg",
     "index.html": "/mvp/index.html",
-    "main.01b81de8.css.map": "/mvp/static/css/main.01b81de8.css.map",
-    "main.9c61145e.js.map": "/mvp/static/js/main.9c61145e.js.map"
+    "main.b76ae442.css.map": "/mvp/static/css/main.b76ae442.css.map",
+    "main.0310ab17.js.map": "/mvp/static/js/main.0310ab17.js.map"
   },
   "entrypoints": [
-    "static/css/main.01b81de8.css",
-    "static/js/main.9c61145e.js"
+    "static/css/main.b76ae442.css",
+    "static/js/main.0310ab17.js"
   ]
 }
