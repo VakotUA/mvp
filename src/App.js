@@ -9,6 +9,8 @@ import Help from './components/help/Help'
 import FAQ from './components/faq/FAQ'
 import Reviews from './components/reviews/Reviews'
 import MobileApp from './components/mobile/MobileApp'
+import Geography from './components/geography/Geography'
+import Find from './components/find/Find'
 
 import styles from './App.module.css'
 
@@ -58,9 +60,9 @@ function App() {
       <FAQ />
       <Reviews reviews={data.reviews} />
       <MobileApp />
+      <Geography cities={data.cities} />
+      <Find />
 
-      {/* <Geography /> */}
-      {/* <Find /> */}
       {/* <Footer /> */}
     </div>
   )

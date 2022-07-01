@@ -80,7 +80,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .steps > div {
+  .steps > a {
     width: 100%;
   }
   .separator {

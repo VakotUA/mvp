@@ -16,8 +16,6 @@
 
   position: absolute;
   left: 0;
-
-  transition: opacity 0.3s ease-in-out;
 }
 
 .slide.active {
@@ -121,6 +119,12 @@
 .options > div.active {
   transform: scale(1.2);
   background-color: var(--color-button-primary);
+}
+
+@media screen and (max-width: 800px) {
+  .slider > .btn {
+    opacity: 0.5;
+  }
 }
 
 @media screen and (max-width: 500px) {

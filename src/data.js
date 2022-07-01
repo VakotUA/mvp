@@ -434,6 +434,359 @@ const data = {
       bgImage: require('./assets/slide-4.jpg'),
     },
   ],
+
+  cities: [
+    {
+      id: 0,
+      link: '/mvp/cities/',
+      name: 'Александрия',
+    },
+    {
+      id: 1,
+      link: '/mvp/cities/',
+      name: 'Белая Церковь',
+    },
+    {
+      id: 2,
+      link: '/mvp/cities/',
+      name: 'Белгород-Днестровский',
+    },
+    {
+      id: 3,
+      link: '/mvp/cities/',
+      name: 'Бердичев',
+    },
+    {
+      id: 4,
+      link: '/mvp/cities/',
+      name: 'Бердичев',
+    },
+    {
+      id: 5,
+      link: '/mvp/cities/',
+      name: 'Березань',
+    },
+    {
+      id: 6,
+      link: '/mvp/cities/',
+      name: 'Борисполь',
+    },
+    {
+      id: 7,
+      link: '/mvp/cities/',
+      name: 'Боярка',
+    },
+    {
+      id: 8,
+      link: '/mvp/cities/',
+      name: 'Бровары',
+    },
+    {
+      id: 9,
+      link: '/mvp/cities/',
+      name: 'Буча',
+    },
+    {
+      id: 10,
+      link: '/mvp/cities/',
+      name: 'Васильков',
+    },
+    {
+      id: 11,
+      link: '/mvp/cities/',
+      name: 'Вишнёвое',
+    },
+    {
+      id: 12,
+      link: '/mvp/cities/',
+      name: 'Вышгород',
+    },
+    {
+      id: 13,
+      link: '/mvp/cities/',
+      name: 'Днепр (Днепропетровск)',
+    },
+    {
+      id: 14,
+      link: '/mvp/cities/',
+      name: 'Дрогобыч',
+    },
+    {
+      id: 15,
+      link: '/mvp/cities/',
+      name: 'Житомир',
+    },
+    {
+      id: 16,
+      link: '/mvp/cities/',
+      name: 'Запорожье',
+    },
+    {
+      id: 17,
+      link: '/mvp/cities/',
+      name: 'Ивано-Франковск',
+    },
+    {
+      id: 18,
+      link: '/mvp/cities/',
+      name: 'Измаил',
+    },
+    {
+      id: 19,
+      link: '/mvp/cities/',
+      name: 'Ирпень',
+    },
+    {
+      id: 20,
+      link: '/mvp/cities/',
+      name: 'Каменец-Подольский',
+    },
+    {
+      id: 21,
+      link: '/mvp/cities/',
+      name: 'Каменское (Днепродзержинск)',
+    },
+    {
+      id: 22,
+      link: '/mvp/cities/',
+      name: 'Киев',
+    },
+    {
+      id: 23,
+      link: '/mvp/cities/',
+      name: 'Ковель',
+    },
+    {
+      id: 24,
+      link: '/mvp/cities/',
+      name: 'Конотоп',
+    },
+    {
+      id: 25,
+      link: '/mvp/cities/',
+      name: 'Краматорск',
+    },
+    {
+      id: 26,
+      link: '/mvp/cities/',
+      name: 'Кременчуг',
+    },
+    {
+      id: 27,
+      link: '/mvp/cities/',
+      name: 'Кривой Рог',
+    },
+    {
+      id: 28,
+      link: '/mvp/cities/',
+      name: 'Кропивницкий (Кировоград)',
+    },
+    {
+      id: 29,
+      link: '/mvp/cities/',
+      name: 'Лисичанск',
+    },
+    {
+      id: 30,
+      link: '/mvp/cities/',
+      name: 'Лозовая',
+    },
+    {
+      id: 31,
+      link: '/mvp/cities/',
+      name: 'Луцк',
+    },
+    {
+      id: 32,
+      link: '/mvp/cities/',
+      name: 'Львов',
+    },
+    {
+      id: 33,
+      link: '/mvp/cities/',
+      name: 'Мариуполь',
+    },
+    {
+      id: 34,
+      link: '/mvp/cities/',
+      name: 'Мелитополь',
+    },
+    {
+      id: 35,
+      link: '/mvp/cities/',
+      name: 'Мукачево',
+    },
+    {
+      id: 36,
+      link: '/mvp/cities/',
+      name: 'Нежин',
+    },
+    {
+      id: 37,
+      link: '/mvp/cities/',
+      name: 'Николаев',
+    },
+    {
+      id: 38,
+      link: '/mvp/cities/',
+      name: 'Никополь',
+    },
+    {
+      id: 39,
+      link: '/mvp/cities/',
+      name: 'Новомосковск',
+    },
+    {
+      id: 40,
+      link: '/mvp/cities/',
+      name: 'Обухов',
+    },
+    {
+      id: 41,
+      link: '/mvp/cities/',
+      name: 'Одесса',
+    },
+    {
+      id: 42,
+      link: '/mvp/cities/',
+      name: 'Павлоград',
+    },
+    {
+      id: 43,
+      link: '/mvp/cities/',
+      name: 'Первомайск',
+    },
+    {
+      id: 44,
+      link: '/mvp/cities/',
+      name: 'Переяслав-Хмельницкий',
+    },
+    {
+      id: 45,
+      link: '/mvp/cities/',
+      name: 'Полтава',
+    },
+    {
+      id: 46,
+      link: '/mvp/cities/',
+      name: 'Прилуки',
+    },
+    {
+      id: 47,
+      link: '/mvp/cities/',
+      name: 'Ржищев',
+    },
+    {
+      id: 48,
+      link: '/mvp/cities/',
+      name: 'Ровно',
+    },
+    {
+      id: 49,
+      link: '/mvp/cities/',
+      name: 'Северодонецк',
+    },
+    {
+      id: 50,
+      link: '/mvp/cities/',
+      name: 'Славутич',
+    },
+    {
+      id: 51,
+      link: '/mvp/cities/',
+      name: 'Славянск',
+    },
+    {
+      id: 52,
+      link: '/mvp/cities/',
+      name: 'Смела',
+    },
+    {
+      id: 53,
+      link: '/mvp/cities/',
+      name: 'Сумы',
+    },
+    {
+      id: 54,
+      link: '/mvp/cities/',
+      name: 'Тернополь',
+    },
+    {
+      id: 55,
+      link: '/mvp/cities/',
+      name: 'Ужгород',
+    },
+    {
+      id: 56,
+      link: '/mvp/cities/',
+      name: 'Украинка',
+    },
+    {
+      id: 57,
+      link: '/mvp/cities',
+      name: 'Умань',
+    },
+    {
+      id: 58,
+      link: '/mvp/cities/',
+      name: 'Фастов',
+    },
+    {
+      id: 59,
+      link: '/mvp/cities/',
+      name: 'Харьков',
+    },
+    {
+      id: 60,
+      link: '/mvp/cities/',
+      name: 'Херсон',
+    },
+    {
+      id: 61,
+      link: '/mvp/cities/',
+      name: 'Хмельницкий',
+    },
+    {
+      id: 62,
+      link: '/mvp/cities/',
+      name: 'Червоноград',
+    },
+    {
+      id: 63,
+      link: '/mvp/cities/',
+      name: 'Черкассы',
+    },
+    {
+      id: 64,
+      link: '/mvp/cities/',
+      name: 'Чернигов',
+    },
+    {
+      id: 65,
+      link: '/mvp/cities/',
+      name: 'Черновцы',
+    },
+    {
+      id: 66,
+      link: '/mvp/cities/',
+      name: 'Черноморск (Ильичевск)',
+    },
+    {
+      id: 67,
+      link: '/mvp/cities/',
+      name: 'Шостка',
+    },
+    {
+      id: 68,
+      link: '/mvp/cities/',
+      name: 'Энергодар',
+    },
+    {
+      id: 69,
+      link: '/mvp/cities/',
+      name: 'Яготин',
+    },
+  ],
 }
 
 export default data

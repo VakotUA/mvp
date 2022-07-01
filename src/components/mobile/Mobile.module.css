@@ -29,6 +29,7 @@
 }
 .mobile > div:last-of-type > h2 > a {
   color: var(--color-hover-effect-primary);
+  font-weight: 500;
   text-decoration: none;
 }
 .mobile > div:last-of-type > h2 > a:hover {
