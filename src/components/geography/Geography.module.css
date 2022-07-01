@@ -24,7 +24,7 @@
 
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 0.5rem 3rem;
   word-wrap: break-word;
   white-space: nowrap;
@@ -46,13 +46,13 @@
   text-decoration: underline;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .geography {
     padding: 60px;
   }
-  /* .geography > ul {
-    grid-template-columns: 1fr 1fr;
-  } */
+  .geography > ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 800px) {

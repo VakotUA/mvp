@@ -10,13 +10,13 @@ const data = {
         text: 'Более 100 000 проверенных специалистов для выполнения ваших бытовых или бизнес задач',
         example: {
           text: 'ремонт крана',
-          link: '/mvp/house/remont-krana',
+          link: '/mvp/categories/house/remont-krana',
         },
         faq: [
           {
             text: 'Все категории услуг',
             icon: <Icons.Grid />,
-            link: '/mvp/all-categories',
+            link: '/mvp/categories/',
           },
           {
             text: 'Как это работает',
@@ -29,19 +29,19 @@ const data = {
     },
     {
       id: 1,
-      link: '/mvp/house',
+      link: '/mvp/categories/house',
       content: {
         header: 'Онлайн-сервис заказа услуг для дома',
         text: 'Мы поможем вам найти любого специалиста по уходу за квартирой или домом',
         example: {
           text: 'убрать в квартире',
-          link: '/mvp/house/cleaning',
+          link: '/mvp/categories/house/cleaning',
         },
         faq: [
           {
             text: 'Все категории услуг',
             icon: <Icons.Grid />,
-            link: '/mvp/all-categories',
+            link: '/mvp/categories/',
           },
           {
             text: 'Как это работает',
@@ -55,19 +55,19 @@ const data = {
     },
     {
       id: 2,
-      link: '/mvp/logistic',
+      link: '/mvp/categories/logistic',
       content: {
         header: 'Онлайн-сервис заказа услуг по доставке',
         text: 'Мы поможем вам найти курьера или любой транспорт в течение нескольких минут',
         example: {
           text: 'доставить подарок',
-          link: '/mvp/logistic/deliver-a-gift',
+          link: '/mvp/categories/logistic/deliver-a-gift',
         },
         faq: [
           {
             text: 'Все категории услуг',
             icon: <Icons.Grid />,
-            link: '/mvp/all-categories',
+            link: '/mvp/categories/',
           },
           {
             text: 'Как это работает',
@@ -81,19 +81,19 @@ const data = {
     },
     {
       id: 3,
-      link: '/mvp/freelance',
+      link: '/mvp/categories/freelance',
       content: {
         header: 'Биржа фриланс услуг',
         text: 'Мы поможем вам найти компетентного фрилансера для выполнения любой онлайн работы',
         example: {
           text: 'написать текст',
-          link: '/mvp/freelance/write-a-text',
+          link: '/mvp/categories/freelance/write-a-text',
         },
         faq: [
           {
             text: 'Все категории услуг',
             icon: <Icons.Grid />,
-            link: '/mvp/all-categories',
+            link: '/mvp/categories/',
           },
           {
             text: 'Начать зарабатывать ',
@@ -112,19 +112,19 @@ const data = {
     },
     {
       id: 4,
-      link: '/mvp/teacher',
+      link: '/mvp/categories/teacher',
       content: {
         header: 'Онлайн-сервис поиска преподавателей и тренеров',
         text: 'Мы поможем вам найти индивидуального тренера или репетитора в течение нескольких минут',
         example: {
           text: 'преподователь английского',
-          link: '/mvp/teacher/teacher-of-english',
+          link: '/mvp/categories/teacher/teacher-of-english',
         },
         faq: [
           {
             text: 'Все категории услуг',
             icon: <Icons.Grid />,
-            link: '/mvp/all-categories',
+            link: '/mvp/categories/',
           },
           {
             text: 'Как это работает',
@@ -138,19 +138,19 @@ const data = {
     },
     {
       id: 5,
-      link: '/mvp/business',
+      link: '/mvp/categories/business',
       content: {
         header: 'Онлайн-сервис заказа деловых услуг',
         text: 'Мы поможем вам найти личного помощника для выполнения любой работы',
         example: {
           text: 'ведение бухгалтерии',
-          link: '/mvp/business/bookkeeping',
+          link: '/mvp/categories/business/bookkeeping',
         },
         faq: [
           {
             text: 'Все категории услуг',
             icon: <Icons.Grid />,
-            link: '/mvp/all-categories',
+            link: '/mvp/categories/',
           },
           {
             text: 'Как это работает',
@@ -168,7 +168,7 @@ const data = {
     {
       id: 0,
       lable: 'Дом',
-      link: '/mvp/house',
+      link: '/mvp/categories/house',
       img: <Icons.House />,
       list: [
         {
@@ -286,14 +286,14 @@ const data = {
     {
       id: 1,
       lable: 'Доставка',
-      link: '/mvp/logistic',
+      link: '/mvp/categories/logistic',
       img: <Icons.Truck />,
       list: [],
     },
     {
       id: 2,
       lable: 'Фриланс',
-      link: '/mvp/freelance',
+      link: '/mvp/categories/freelance',
       img: <Icons.Mouse2 />,
       list: [
         {
@@ -342,21 +342,21 @@ const data = {
     {
       id: 3,
       lable: 'Преподователи',
-      link: '/mvp/teacher',
+      link: '/mvp/categories/teacher',
       img: <Icons.JournalBookmark />,
       list: [],
     },
     {
       id: 4,
       lable: 'Бизнес',
-      link: '/mvp/business',
+      link: '/mvp/categories/business',
       img: <Icons.Briefcase />,
       list: [],
     },
     {
       id: 5,
       lable: 'Спорт',
-      link: '/mvp/sport',
+      link: '/mvp/categories/sport',
       img: <Icons.Balloon />,
       list: [
         {

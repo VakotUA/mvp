@@ -2,11 +2,11 @@
 
 .categorySelect {
   width: 100%;
-  padding: 40px 0;
 }
 
 .categorySelect > ul {
   width: 750px;
+  padding: 40px 0;
   margin: 0 auto;
 
   display: flex;
@@ -27,12 +27,12 @@
 
   color: var(--color-lightgray);
   text-decoration: none;
+  font-size: 14px;
+  white-space: nowrap;
 
   display: flex;
   align-items: center;
   flex-direction: column;
-
-  font-size: 14px;
 
   position: relative;
 

@@ -52,16 +52,18 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  gap: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
   margin-bottom: 40px;
 }
 
 .btn {
   width: 50%;
   max-width: 250px;
+  min-width: 200px;
   height: 2.5rem;
   padding: 0 20px;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 
   text-decoration: none;
   text-align: center;
@@ -87,4 +89,10 @@
 
 .btn.active:hover {
   filter: grayscale(50%);
+}
+
+@media screen and (max-width: 600px) {
+  .find {
+    padding: 60px;
+  }
 }
