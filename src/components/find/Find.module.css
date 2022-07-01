@@ -1,0 +1,98 @@
+.find {
+  width: 100%;
+  padding: 60px 100px;
+}
+
+.find > h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--color-gray);
+  margin-bottom: 30px;
+}
+.find > h2 > a {
+  color: var(--color-hover-effect-primary);
+  font-weight: 500;
+  text-decoration: none;
+}
+.find > h2 > a:hover {
+  text-decoration: underline;
+}
+
+.find > h4 {
+  text-align: center;
+  font-size: 14px;
+  color: var(--color-lightgray);
+  margin-bottom: 40px;
+}
+
+.partners {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.partners > a > img {
+  height: 50px;
+  filter: grayscale(100%);
+  opacity: 0.35;
+
+  transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.partners > a > img:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+/* ===BUTTONS=== */
+
+.btns {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  margin-bottom: 40px;
+}
+
+.btn {
+  width: 50%;
+  max-width: 250px;
+  min-width: 200px;
+  height: 2.5rem;
+  padding: 0 20px;
+  /* margin-top: 1rem; */
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 15px;
+
+  color: var(--color-button-primary);
+  border: 1px solid var(--color-button-primary);
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  transition-property: color, background-color, filter;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.btn.active,
+.btn:hover {
+  color: var(--color-bg-primary);
+  background: var(--color-button-primary);
+}
+
+.btn.active:hover {
+  filter: grayscale(50%);
+}
+
+@media screen and (max-width: 600px) {
+  .find {
+    padding: 60px;
+  }
+}

@@ -1,51 +1,58 @@
-.categories {
+/* ===SELECT=== */
+
+.categorySelect {
   width: 100%;
-  padding: 40px 80px;
-  border-bottom: 1px solid lightgrey;
 }
 
-.categories > ul {
+.categorySelect > ul {
+  width: 750px;
+  padding: 40px 0;
+  margin: 0 auto;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+
   list-style-type: none;
 }
 
-.category {
-  width: 20%;
+.categorySelect > ul > li {
+  width: 30%;
 }
 
-.category > a {
+.category {
   width: 100%;
   height: 100%;
 
-  color: #959595;
-  font-size: 10px;
+  color: var(--color-lightgray);
   text-decoration: none;
+  font-size: 14px;
+  white-space: nowrap;
 
   display: flex;
   align-items: center;
   flex-direction: column;
 
-  font-size: 10px;
-
   position: relative;
-  cursor: pointer;
+
+  transition: color 0.3s ease-in-out;
 }
-.category > a:after {
+.category:after {
   content: '';
   width: 10px;
   height: 1px;
+
   position: absolute;
   bottom: -5px;
-  background-color: gray;
+
+  background-color: var(--color-lightgray);
   transition: width 0.3s ease-in-out;
 }
 
 .categoryIcon {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   padding: 5px;
 }
 .categoryIcon > * {
@@ -53,19 +60,107 @@
   height: 100%;
 }
 
-.category > a:hover:after {
+.category:hover,
+.category.active {
+  color: var(--color-hover-effect-primary);
+}
+.category.active::after,
+.category:hover:after {
+  background-color: var(--color-hover-effect-primary);
+}
+.category.active:after {
+  width: 40%;
+}
+.category:hover:after {
   width: 80%;
 }
 
-@media screen and (max-width: 600px) {
-  .categories {
-    padding: 40px;
-  }
-  .categories > ul {
+@media screen and (max-width: 800px) {
+  .categorySelect > ul {
+    width: 100%;
+    max-width: 600px;
+
     gap: 20px 3%;
     flex-wrap: wrap;
   }
-  .category {
-    width: 30%;
+}
+
+/* ===LIST=== */
+
+.categoriesList {
+  width: 100%;
+  padding: 30px 160px;
+}
+
+.categoriesList a {
+  color: var(--color-gray);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.categoriesList ul {
+  list-style-type: none;
+}
+.categoriesList small {
+  font-size: 12px;
+  color: var(--color-lightgray);
+  margin-left: 0.5rem;
+}
+
+.topList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.topList > li {
+  width: 30%;
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 0.5rem;
+}
+
+.topList ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.categoriesList a:hover {
+  color: var(--color-hover-effect-primary);
+  text-decoration: underline;
+}
+
+.categoriesList .btn {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 0.5rem;
+  gap: 0.5rem;
+  font-size: 14px;
+  color: var(--color-lightgray);
+  cursor: pointer;
+}
+
+.categoriesList .btn:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px) {
+  .categoriesList {
+    padding: 20px 30px;
+  }
+  .topList > li {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .categoriesList {
+    padding: 50px;
+  }
+  .topList > li {
+    width: 100%;
   }
 }

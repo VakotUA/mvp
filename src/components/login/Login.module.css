@@ -18,11 +18,11 @@
   position: fixed;
   left: 50%;
   top: 50%;
-  background: white;
+  background: var(--color-bg-primary);
   transform: translate(-50%, -50%);
   border-radius: 5px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
-  color: #ff5722;
+  color: var(--color-button-primary);
   overflow: hidden;
   z-index: 11;
 }
@@ -50,6 +50,8 @@
   top: 25px;
   border-radius: 5px;
   height: 150px;
+
+  transition: height 0.3s ease-in-out;
 }
 .formContent > img:hover {
   height: calc(100% - 75px - 2.5rem);
@@ -60,7 +62,6 @@
 .formTitle,
 .formTitle > div {
   display: flex;
-  /* align-items: flex-end; */
   gap: 1rem;
   justify-content: space-between;
 }
@@ -80,11 +81,11 @@
 
 .formGroup > * {
   cursor: pointer;
-  color: gray;
+  color: var(--color-gray);
 }
 
 .formGroup > label {
-  color: lightgray;
+  color: var(--color-lightgray);
   font-size: 16px;
   position: absolute;
   left: 10px;
@@ -96,11 +97,18 @@
 .formGroup > input {
   width: 100%;
   height: 2rem;
-  border-bottom: 2px solid lightgray;
+  border-bottom: 2px solid var(--color-lightgray);
   padding: 0 10px;
   font-size: 16px;
   position: absolute;
   bottom: 0;
+}
+
+.formGroup > input,
+.formGroup > label {
+  transition-property: color, border-color, transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
 }
 
 .formGroup > input::placeholder {
@@ -113,12 +121,11 @@
 }
 
 .formGroup > input:hover,
-.formGroup > input:hover + label {
-  border-color: #ff5722;
-  color: #ff5722;
-}
-.formGroup > input:focus {
-  border-color: #ff5722;
+.formGroup > input:hover + label,
+.formGroup > input:focus,
+.formGroup > input:focus + label {
+  border-color: var(--color-button-primary);
+  color: var(--color-button-primary);
 }
 
 .formGroup > input:focus + label,
@@ -138,32 +145,39 @@
   width: 50%;
   max-width: 150px;
   height: 2.5rem;
-  margin-top: 1rem;
-  font-size: 20px;
-  font-weight: bold;
-  color: #ff5722;
-  border: 1px solid #ff5722;
-  border-radius: 4px;
-  cursor: pointer;
   padding: 0 20px;
+  margin-top: 1rem;
+
   font-size: 15px;
+  font-weight: bold;
+
+  color: var(--color-button-primary);
+  border: 1px solid var(--color-button-primary);
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  transition-property: color, background-color, filter;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
 }
 
-.btn.active {
-  color: white;
-  background: #ff5722;
-}
-
+.btn.active,
 .btn:hover {
-  color: white;
-  background: #ff5722;
-  box-shadow: 0px 2px 4px #ff562281;
+  color: var(--color-bg-primary);
+  background: var(--color-button-primary);
+}
+
+.btn.active:hover {
+  filter: grayscale(50%);
 }
 
 /* ===ERROR=== */
 
 .error {
   color: red;
+  display: flex;
+  align-items: center;
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.05);
   padding: 5px 10px;

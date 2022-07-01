@@ -1,0 +1,80 @@
+.mobile {
+  width: 100%;
+  padding: 80px 40px 0px 40px;
+
+  display: flex;
+  flex-wrap: nowrap;
+}
+.mobile > div:first-of-type {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.mobile > div:first-of-type > img {
+  width: 460px;
+}
+
+.mobile > div:last-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile > div:last-of-type > h2 {
+  margin-bottom: 3rem;
+
+  text-align: center;
+  font-weight: 400;
+  font-size: 32px;
+}
+.mobile > div:last-of-type > h2 > a {
+  color: var(--color-hover-effect-primary);
+  font-weight: 500;
+  text-decoration: none;
+}
+.mobile > div:last-of-type > h2 > a:hover {
+  text-decoration: underline;
+}
+
+.mobile > div:last-of-type > p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.links {
+  width: 100%;
+  margin-top: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.links > a {
+  width: 170px;
+  height: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  .links {
+    margin-top: 0;
+  }
+  .mobile {
+    flex-wrap: wrap-reverse;
+  }
+  .mobile > div:first-of-type,
+  .mobile > div:last-of-type {
+    width: 100%;
+  }
+  .mobile > div:last-of-type {
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mobile > div:first-of-type > img {
+    width: 300px;
+  }
+}
